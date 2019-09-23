@@ -1,0 +1,6 @@
+*/migrations/*
+.idea/
+*.png
+.coverage
+__pycache__
+venv/

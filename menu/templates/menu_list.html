@@ -1,0 +1,39 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <title>eMenu</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Dosis:400,700" rel="stylesheet"/>
+    <link href="{% static 'styles.css' %}" rel="stylesheet"/>
+    <script src="{% static 'main.js' %}"></script>
+
+</head>
+
+<body>
+<div id="root">
+    <div class="menu-list">
+
+
+        <button id="nameSort" disabled onclick="sortByName()">Sortuj po nazwie</button>
+        <button id="dishesSort" disabled onclick="sortByDishes()">Sortuj według dań</button>
+        <button id="idSort" disabled onclick="sortByID()">Domyślna kolejność</button>
+        <table id="menu-table"></table>
+        <div id="buttons">
+            <button id="previous" disabled onclick="goToNextPage(this.title)">Poprzednia strona</button>
+            <button id="next" disabled onclick="goToNextPage(this.title)">Następna strona</button>
+        </div>
+    </div>
+    <div class="menu-box">
+      <p id="name"></p>
+      <p id="description"></p>
+      <table id="dish-table"></table>
+    </div>
+</div>
+<div id="background"></div>
+
+</body>
+</html>

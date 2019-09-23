@@ -1,0 +1,47 @@
+#root {
+  margin: 0 auto;
+  position: relative;
+  width: 90%;
+  height: 90%;
+  font-family: "Georgia";
+  font-size: 1.5rem;
+
+}
+
+.menu-list {
+  position: relative;
+  float: left;
+  width: 50%;
+  height: 50%;
+}
+
+#menu-table {
+ position: relative;
+ padding: 1rem;
+}
+
+#buttons {
+position: absolute;
+    top: 20rem;
+
+}
+
+.menu-box {
+  position: relative;
+  float: right;
+  width: 50%;
+  height: 100%;
+}
+
+#background {
+  content: "";
+  background: url("background.jpeg");
+  background-repeat: no-repeat;
+  opacity: 0.4;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
